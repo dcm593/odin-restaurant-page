@@ -1,4 +1,5 @@
 /* styles.css */
-body {
-  background-color: rebeccapurple;
+* {
+  padding: 0;
+  margin: 0;
 }
