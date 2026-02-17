@@ -1,3 +1,3 @@
 export function contact() {
-    const contentDive = document.getElementById("content");
+    const contentDiv = document.getElementById("content");
 }

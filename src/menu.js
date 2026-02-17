@@ -1,3 +1,7 @@
 export function menu() {
-    const contentDive = document.getElementById("content");
+    const contentDiv = document.getElementById("content");
+    const menuContainer = document.createElement("div");
+    menuContainer.classList.add("menu-container");
+
+    contentDiv.appendChild(menuContainer);
 }
