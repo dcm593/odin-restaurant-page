@@ -1,6 +1,4 @@
-import { head } from "lodash";
-
-export function init() {
+export function home() {
     const contentDiv = document.getElementById("content");
   
     const heading = document.createElement("h1");
