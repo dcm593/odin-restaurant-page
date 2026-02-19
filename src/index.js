@@ -1,6 +1,5 @@
 import { home } from "./home.js";
 import { menu } from "./menu.js";
-import { about } from "./about.js";
 import { contact } from "./contact.js";
 import "./styles.css";
 home();
@@ -23,9 +22,6 @@ nav.addEventListener("click", (e) => {
       break;
     case "menu-button":
       menu();
-      break;
-    case "about-button":
-      about();
       break;
     case "contact-button":
       contact();

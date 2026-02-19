@@ -47,6 +47,8 @@ li > button:hover {
     text-decoration: underline;
 }
 
+
+/* Home (mostly) Tab Styling */
 .home-images img,
 .home-container > p,
 .dish {
@@ -62,8 +64,13 @@ li > button:hover {
 
 li > button,
 .home-container,
+.contact-wrapper,
 .dish,
-.menu-wrapper h1{
+.menu-wrapper h1,
+.reservation-form,
+.reservation-form input,
+.reservation-form button,
+.reservation-form ::placeholder{
     color: #163361;
 }
 
@@ -86,10 +93,8 @@ li > button,
     border-radius: 1.5rem;
 }
 
-/* .menu-wrapper{
-    padding: 2rem;
-} */
 
+/* Menu Tab Styling */
 .menu-wrapper h1 {
     text-align: center;
 }
@@ -127,3 +132,49 @@ li > button,
     font-weight: bold;
     font-size: 1.1rem;
 }
+
+
+/* Contact Tab Styling */
+.contact-wrapper {
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem auto 0 auto;
+    width: 50%;
+}
+
+.store-info,
+.hours {
+    justify-self: center;
+    text-align: left;
+}
+
+.reservation {
+    width: 50%;
+    margin: 2rem auto 0 auto; /* centers horizontally */
+    background: #ECD68B;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: solid 0.5rem #FE786D;
+}
+
+.reservation-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.reservation-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.reservation-form button {
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
