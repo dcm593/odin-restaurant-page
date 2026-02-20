@@ -35,45 +35,29 @@ export function contact() {
     const reservationSection = document.createElement("div");
     reservationSection.classList.add("reservation");
 
+    const reservationMsg = document.createElement("h2");
+    reservationMsg.textContent = "Make a Reservation";
+
     const reservation = document.createElement("form");
     reservation.classList.add("reservation-form");
 
     reservation.innerHTML = `
-    <h2>Make a Reservation</h2>
-        <label for="name">
-        Name:
-        <input type="text" id="name" name="name" required>
-        </label>
+        <input type="text" id="name" name="name" placeholder="Name" required>
 
-        <label for="email">
-        Email:
-        <input type="email" id="email" name="email" required>
-        </label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
 
-        <label for="date">
-        Date:
         <input type="date" id="date" name="date" required>
-        </label>
 
-        <label for="time">
-        Time:
         <input type="time" id="time" name="time" required>
-        </label>
 
-        <label for="guests">
-        Number of Guests:
-        <input type="number" id="guests" name="guests" min="1" max="20" required>
-        </label>
+        <input type="number" id="guests" name="guests" min="1" max="20" placeholder="Group Size" required>
 
-        <label>
-        Allergy Disclosure or Special Requests:
         <textarea id="requests" name="notes" rows="4" placeholder="Please let us know if you have any allergies or special requests."></textarea>
-        </label>
 
         <button type="submit">Submit Reservation</button>
     `;
 
-    reservationSection.appendChild(reservation);
+    reservationSection.append(reservationMsg, reservation);
     contactContainer.append(storeInfo, hours);
     contactWrapper.append(contactHeading, contactContainer, reservationSection);
     contentDiv.appendChild(contactWrapper);
